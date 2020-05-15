@@ -5,12 +5,12 @@ Z1861047
 Section 3
 Csci340
 */
-#include<iostream>
-#include<vector>
+
 #include"Prog1.h"
 #include <iomanip>
-using namespace std;
 
+//Take in the vector we will generate random numbers for 
+//as a paramater.
 void genRndNums(vector<int>&v) {
 	const int SEED = 1;
 	srand(SEED);
@@ -21,10 +21,13 @@ void genRndNums(vector<int>&v) {
 		v.push_back(temp);
 	}
 }
+
+//Print the vector in a table format
 void printVec(const vector <int>&v) {
 
-	cout << setprecision(5);
 	int flag = 0;
+	cout << setprecision(5);
+
 	for (auto i = v.begin(); i != v.end(); ++i)
 	{
 		if (flag == NO_ITEMS)
