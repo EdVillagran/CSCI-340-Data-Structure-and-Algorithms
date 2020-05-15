@@ -16,8 +16,8 @@ using namespace std;
 
 //Defining all the constant variables to use
 const int VEC_SIZE = 250; //Vector Size
-const int NO_ITEMS = 12;  
-const int ITEM_W = 5;     //Width of table to print
+const int NO_ITEMS = 12;  //Number of Columns to use
+const int ITEM_W = 5;     //Width between each number
 const int LOW = 1;        //Lowest generated number
 const int HIGH = 10000;   //Highest generated number
 
